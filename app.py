@@ -80,16 +80,17 @@ def opcao_usuario():
     '''Trata as opcoes do usuario, mandando para suas respectivas funcoes'''
     try:
         opcao_escolhida = int(input('\nEscolha uma opção: '))
-        if opcao_escolhida == 1:
-            cadastrar_aluno()
-        elif opcao_escolhida == 2:
-            listar_alunos()
-        elif opcao_escolhida == 3:
-            calcular_media()
-        elif opcao_escolhida == 4:
-            finalizar_app()
-        else:
-            opcao_invalida()
+        match opcao_escolhida:
+            case 1:
+                cadastrar_aluno()
+            case 2:
+                listar_alunos()
+            case 3:
+                calcular_media()
+            case 4:
+                finalizar_app()
+            case _:
+                opcao_invalida()
     except:
         opcao_invalida()
 
