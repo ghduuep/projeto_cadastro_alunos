@@ -63,7 +63,7 @@ def calcular_media():
             print(f'\nA média de {aluno_media} é {media:.2f}')
             break
         else:
-                print('Aluno não encontrado no nosso banco de dados!')
+            print('Aluno não encontrado no nosso banco de dados!')
     voltar_ao_menu()
 
 def finalizar_app():
