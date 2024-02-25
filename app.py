@@ -60,7 +60,7 @@ def calcular_media():
             notas = aluno['notas']
             media = sum(notas) / len(notas)
             aluno['media'] = media
-            print(f'\nA média de {aluno_media} é {media}')
+            print(f'\nA média de {aluno_media} é {media:.2f}')
             break
         else:
                 print('Aluno não encontrado no nosso banco de dados!')
